@@ -1,0 +1,409 @@
+﻿/**
+ * HTML5 ✰ Boilerplate
+ *
+ * style.css contains a reset, font normalization and some base styles.
+ *
+ * Credit is left where credit is due.
+ * Much inspiration was taken from these projects:
+ * - yui.yahooapis.com/2.8.1/build/base/base.css
+ * - camendesign.com/design/
+ * - praegnanz.de/weblog/htmlcssjs-kickstart
+ */
+
+
+/**
+ * html5doctor.com Reset Stylesheet (Eric Meyer's Reset Reloaded + HTML5 baseline)
+ * v1.6.1 2010-09-17 | Authors: Eric Meyer & Richard Clark
+ * html5doctor.com/html-5-reset-stylesheet/
+ */
+ 
+body {background:url(../img/bg.gif) repeat-x; margin:0; color:#222; line-height:1.5em !important;}
+
+a {text-decoration:none;}
+
+.head_c, .title_c, .title_top, .green_c, .uni_line, .black_c, .search_c, textarea {width:93%; max-width:480px; display:block; margin:0 auto; padding:0 5px;}
+
+.logo, .title_c, .logo_s, .learn_more,
+.watch_demo, .create_acct, .get_started, .calc_sav, .visit_site, .view_details, 
+.return_esti, .bango_ch, .paypal_ch, .google_ch,
+.send_email, .send_sms, .edit_contact, .save-report, .start-new, .btn_profile {background:url(../img/spr-et.png)}
+
+.memlog_circ, .login_error, .cre_acct_list li, .aj_a, .aj_a_m {background:url(../img/spr-si.png)}
+
+.head_w {background:url(../img/bg-head.png) repeat-x; position:relative;}
+.head_c {height:105px;}
+.title_w {background:url(../img/bg-title.gif) repeat-x; padding:13px 0; font-size:22px; color:#ffffff;}
+.logo {background-position:0 0; width:244px; height:68px; display:block; margin:19px auto 0 auto;}
+
+.green_w {background:url(../img/bg-green.png) repeat-x; position:relative; margin:15px 0;}
+.green_c p.gc_desc {float:left; width:75%; vertical-align:middle;}
+.logo_s {background-position:0 0; width:60px; height:60px; float:right;}
+.learn_more {background-position:0 -70px; width:132px; height:33px; margin:0 auto; position:absolute; bottom:-15px; left:-50%; right:-50%;}
+
+.member_login {margin:30px 0 0 0;}
+.member_login .green_c {width:120px;}
+.memlog_circ {background-position: 0 0px; width:16px; height:16px; float:right; display:block;}
+
+.btn_profile {background-position:-132px -71px; display:block; width:98px; height:25px; position:absolute; right:43px; top:0;}
+
+.login_w {margin:10px 0;}
+.login_f {width:300px; margin:0 auto;}
+.login_f input[type=text], .login_f input[type=password], textarea {width:93%; max-width:480px; padding:8px 6px; margin:5px auto; display:block;}
+.login_f input[type=checkbox] {margin-left:4px;}
+.login_f input[type=image] {margin:9px 0;}
+.login_f .login {float:right; margin-right:2px;cursor:pointer;}
+.login_ch {float:left; margin:9px 0;}
+.forgot_pass {margin:12px 0 0px 0;}
+.login_error {background-position: 0 -16px; background-repeat:no-repeat; width:210px; line-height:15px; color:#900; height:16px; margin:0 auto; display:block;}
+.or {margin:10px 0;}
+
+.cre_acct_list li {background-position:-18px 0; background-repeat:no-repeat; padding:0px 0 0 17px; list-style:none; margin-bottom:9px;}
+
+.aj_play {padding:0; margin:0;}
+.aj_play li {background:url(../img/bg-aj.png) repeat-x; list-style:none;}
+.aj_play_cur {background:url(../img/bg-aj-cur.png) repeat-x !important;}
+.aj_d {float:left;}
+.aj_a {width:15px; height:20px; float:right; background-position:0 -58px; margin-top:20px;}
+.aj_li_c {line-height:60px; height:60px; width:93%; max-width:480px; margin:0 auto; font-weight:bold; font-size:18px; color:#fff; cursor:pointer;}
+.aj_content {display:none; margin-bottom:10px;}
+
+.ho_deduct {width:200px; padding:8px 6px;}
+
+.black_w {background:url(../img/bg-black.png) repeat-x;}
+.black_c {height:102px; padding:0; margin:0 auto;}
+.black_c li {width:33%; max-width:160px; display:inline-block; float:left; text-align:center; color:#949494; text-shadow: 1px 1px 0px #333333; filter: dropshadow(color=#333333, offx=1, offy=1);}
+
+.search_w {background:url(../img/bg-search.png) repeat-x;}
+.search_c {height:42px; }
+.search_box {width:235px; height:17px; padding:0 4px; border:0; margin:0 0 0 30px; background:#f4f4f4; -webkit-appearance: none;}
+.sb_w {background:url(../img/spr-et.png) 0 -317px; width:283px; height:21px; margin:8px auto;}
+
+.bt_calc, .bg_graph, .bt_paper, .bt_calc_c, .bg_graph_c, .bt_paper_c {background:url(../img/spr-footer.png) no-repeat; width:57px; height:56px; margin:12px auto; display:block;}
+
+.bt_calc {background-position: 0 -55px;}
+.bg_graph {background-position: -58px -55px;}
+.bt_paper {background-position: -116px -56px;}
+
+.bt_calc_c {background-position: 0 0;}
+.bg_graph_c {background-position: -58px 0;}
+.bt_paper_c {background-position: -116px 0;}
+
+.aj_li_m {line-height:20px; height:50px; width:93%; max-width:480px; padding-top:10px; margin:0 auto; font-weight:bold; font-size:18px; color:#fff; cursor:pointer;}
+.aj_a_m {width:15px; height:20px; float:right; background-position:0 -58px; margin-top:10px;}
+
+.gray_box {background:#ccc; padding:10px; width:85%; max-width:430px; margin:0 auto; background:#f2f2f2; border:1px solid #ddd;}
+
+.bango_ch, .paypal_ch, .google_ch {background:url(../img/spr-et.png); display:block; width:282px; height:42px; margin:9px auto;}
+.bango_ch {background-position:0 -189px;}
+.paypal_ch {background-position:0 -232px;}
+.google_ch {background-position:0 -275px;}
+
+.tax_sa {line-height:20px; text-align:center; margin-top:10px;}
+.big_fig {font-size:30px; text-align:center; line-height:50px;}
+.edit_contact {background-position:0 -644px;}
+
+.video_demo {margin:20px 0;}
+
+
+textarea {border-top:2px solid #9a9a9a; border-left:2px solid #9a9a9a; border-right:2px solid #eeeeee; border-bottom:2px solid #eeeeee;}
+
+.sf1 {text-align:center; font-family:Georgia, "Times New Roman", Times, serif; font-style:italic;}
+
+.img_dc {display:block;}
+.img_dc_orange, .img_dc_blue, .img_dc_black {background:url(../img/spr-et.png); margin:10px auto; display:block; width:282px; height:43px; line-height:43px; font-size:24px; font-weight:bold; color:#fff !important;}
+.img_dc_orange {background-position:0 -103px;}
+.img_dc_blue {background-position:0 -146px;}
+.img_dc_black {background-position:0 -338px;}
+
+.anti_s {height:1px;}
+
+.title_top, .green_c, .uni_line {padding:10px 0;}
+
+.ss0 {font-size:9px;}
+.ss1 {font-size:11px;}
+.ss2 {font-size:12px;}
+.ss3 {font-size:13px;}
+.ss4 {font-size:14px;}
+.ss6 {font-size:16px;}
+.ss8 {font-size:18px;}
+.ss10 {font-size:20px;}
+
+.t_green {color:#5dbb46;}
+
+.forgot_pass, .title_w, .not_member, .or, .save_report_f input, .img_dc_orange, .img_dc_blue {text-align:center;}
+
+.clear_both {clear:both;}
+
+.corner_all {
+-moz-border-radius-bottomleft:3px; -moz-border-radius-bottomright:3px; -moz-border-radius-topleft:3px; -moz-border-radius-topright:3px;
+-webkit-border-bottom-left-radius:3px; -webkit-border-bottom-right-radius:3px; -webkit-border-top-left-radius:3px; -webkit-border-top-right-radius:3px;
+border-radius-bottomleft:3px; border-radius-bottomright:3px; border-radius-topleft:3px; border-radius-topright:3px;}
+
+
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+footer {height:10px;}
+
+blockquote, q { quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after { content: ""; content: none; }
+
+ins { background-color: #ff9; color: #000; text-decoration: none; }
+
+mark { background-color: #ff9; color: #000; font-style: italic; font-weight: bold; }
+
+del { text-decoration: line-through; }
+
+abbr[title], dfn[title] { border-bottom: 1px dotted; cursor: help; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+
+hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; }
+
+input, select { vertical-align: middle; }
+
+
+
+/**
+ * Font normalization inspired by YUI Library's fonts.css: developer.yahoo.com/yui/
+ */
+
+
+body { font:13px/1.231 sans-serif; *font-size:small; } /* Hack retained to preserve specificity */
+select, input, textarea, button { font:99% sans-serif; }
+
+/* Normalize monospace sizing:
+   en.wikipedia.org/wiki/MediaWiki_talk:Common.css/Archive_11#Teletype_style_fix_for_Chrome */
+pre, code, kbd, samp { font-family: monospace, sans-serif; }
+
+
+/**
+ * Minimal base styles.
+ */
+
+/* Prevent mobile zooming while remain desktop zooming: github.com/shichuan/mobile-html5-boilerplate/issues/closed#issue/14 */
+html { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; } 
+
+/* Accessible focus treatment: people.opera.com/patrickl/experiments/keyboard/test */
+a:hover, a:active { outline: none; }
+
+ul, ol { margin-left: 2em; }
+ol { list-style-type: decimal; }
+
+/* Remove margins for navigation lists */
+nav ul, nav li { margin: 0; list-style:none; list-style-image: none; }
+
+small { font-size: 85%; }
+strong, th { font-weight: bold; }
+
+td { vertical-align: top; }
+
+/* Set sub, sup without affecting line-height: gist.github.com/413930 */
+sub, sup { font-size: 75%; line-height: 0; position: relative; }
+sup { top: -0.5em; }
+sub { bottom: -0.25em; }
+
+pre {
+  /* www.pathf.com/blogs/2008/05/formatting-quoted-code-in-blog-posts-css21-white-space-pre-wrap/ */
+  white-space: pre; white-space: pre-wrap; word-wrap: break-word;
+  padding: 15px;
+}
+
+textarea { overflow: auto; } /* www.sitepoint.com/blogs/2010/08/20/ie-remove-textarea-scrollbars/ */
+
+.iem7 legend { margin-left: -7px; }
+
+/* Align checkboxes, radios, text inputs with their label by: Thierry Koblentz tjkdesign.com/ez-css/css/base.css  */
+input[type="radio"] { vertical-align: text-bottom; }
+input[type="checkbox"] { vertical-align: bottom; }
+.iem7 input[type="checkbox"] { vertical-align: baseline; }
+
+/* Hand cursor on clickable input elements */
+label, input[type="button"], input[type="submit"], input[type="image"], button { cursor: pointer; }
+
+/* Webkit browsers add a 2px margin outside the chrome of form elements */
+button, input, select, textarea { margin: 0; }
+
+/* Colors for form validity */
+input:valid, textarea:valid   {  }
+input:invalid, textarea:invalid {
+   border-radius: 1px; -moz-box-shadow: 0px 0px 5px red; -webkit-box-shadow: 0px 0px 5px red; box-shadow: 0px 0px 5px red;
+}
+.no-boxshadow input:invalid, .no-boxshadow textarea:invalid { background-color: #f0dddd; }
+
+
+/* These selection declarations have to be separate
+   No text-shadow: twitter.com/miketaylr/status/12228805301
+   Also: hot pink! */
+::-moz-selection{ background: #FF5E99; color:#fff; text-shadow: none; }
+::selection { background:#00a5ed; color:#fff; text-shadow: none; }
+
+/* j.mp/webkit-tap-highlight-color */
+a:link { -webkit-tap-highlight-color: #FF5E99; }
+
+/* Make buttons play nice in IE:
+   www.viget.com/inspire/styling-the-button-element-in-internet-explorer/ */
+button {  width: auto; overflow: visible; }
+
+/* Bicubic resizing for non-native sized IMG:
+   code.flickr.com/blog/2008/11/12/on-ui-quality-the-little-things-client-side-image-resizing/ */
+.iem7 img { -ms-interpolation-mode: bicubic; }
+
+
+/**
+ * You might tweak these..
+ */
+
+body, select, input, textarea {
+  /* #444 looks better than black: twitter.com/H_FJ/statuses/11800719859 */
+  color: #444;
+  /* Set your base font here, to apply evenly */
+  /* font-family: Georgia, serif;  */
+}
+
+/* Headers (h1, h2, etc) have no default font-size or margin; define those yourself */
+h1, h2, h3, h4, h5, h6 { font-weight: bold; }
+
+a, a:active, a:visited { color: #607890; }
+a:hover { color: #036; }
+
+
+/* 
+ * Helper classes 
+ */
+ 
+/* prevent callout */
+.nocallout {-webkit-touch-callout: none;}
+
+/* Text overflow with ellipsis */
+.ellipsis {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+/* A hack for HTML5 contenteditable attribute on mobile */
+textarea.contenteditable {-webkit-appearance: none;}
+
+/* A workaround for S60 3.x and 5.0 devices which do not animated gif images if they have been set as display: none */
+.gifhidden {position: absolute; left: -100%;}
+
+/* For image replacement */
+.ir { display: block; text-indent: -999em; overflow: hidden; background-repeat: no-repeat; text-align: left; direction: ltr; }
+
+/* Hide for both screenreaders and browsers:
+   css-discuss.incutio.com/wiki/Screenreader_Visibility */
+.hidden { display: none; visibility: hidden; }
+
+/* Hide only visually, but have it available for screenreaders: by Jon Neal.
+  www.webaim.org/techniques/css/invisiblecontent/  &  j.mp/visuallyhidden */
+.visuallyhidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+/* Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard: drupal.org/node/897638 */
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto; }
+
+/* Hide visually and from screenreaders, but maintain layout */
+.invisible { visibility: hidden; }
+
+/* The Magnificent Clearfix: Updated to prevent margin-collapsing on child elements.
+   j.mp/bestclearfix */
+.clearfix:before, .clearfix:after { content: "\0020"; display: block; height: 0; overflow: hidden; }
+.clearfix:after { clear: both; }
+/* Fix clearfix: blueprintcss.lighthouseapp.com/projects/15318/tickets/5-extra-margin-padding-bottom-of-page */
+.clearfix { zoom: 1; }
+
+
+/* Primary Styles for mobile
+   Author:
+*/
+
+
+/*
+ * Media queries for responsive design https://github.com/shichuan/mobile-html5-boilerplate/wiki/The-Style
+ */
+
+
+/* Styles for desktop and large screen ----------- */
+
+/*styles for 800px and up!*/
+@media only screen and (min-width: 800px) {
+  /* Styles */
+}/*/mediaquery*/
+
+
+/* iPhone 4, Opera Mobile 11 and other high pixel ratio devices ----------- */
+@media
+only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min-device-pixel-ratio: 1.5) {
+  /* Styles */
+}
+
+.logout{
+	right:0;
+	width:44px;
+	background:url(../img/logout.png) no-repeat;
+    display: block;
+    height: 25px;
+    position: absolute;
+    top: 0;
+}
+
+a.dp-choose-date {
+	float: left;
+	width: 16px;
+	height: 16px;
+	padding: 0;
+	margin: 5px 3px 0;
+	display: block;
+	text-indent: -2000px;
+	overflow: hidden;
+	background: url(calendar.png) no-repeat; 
+}
+a.dp-choose-date.dp-disabled {
+	background-position: 0 -20px;
+	cursor: default;
+}
+/* makes the input field shorter once the date picker code
+ * has run (to allow space for the calendar icon
+ */
+/*input.dp-applied {
+	width: 140px;
+	float: left;
+}*/
+#container .pager{
+	padding:10px;
+	font-size:16px;
+	font-weight:bold;
+	text-align:center;
+}
+#container .pager .imgNext{
+	float: right;
+	height: 19px;
+}
+#container .pager .imgPrev{
+	float: left;
+	height: 19px;
+}

@@ -1,0 +1,11 @@
+@charset "utf-8";
+/* CSS Document */
+#emailError, #passError, #phoneError, #nameError{
+	display:none;
+	color:#F00;
+	font-size:11px;	
+}
+
+.red_c{
+	color:#F00;
+}
